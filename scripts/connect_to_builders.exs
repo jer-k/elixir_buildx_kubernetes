@@ -1,0 +1,5 @@
+args = System.argv()
+name = Enum.at(args, 0)
+replicas = Enum.at(args, 1)
+namespace = Enum.at(args, 2)
+ElixirBuildxKubernetes.DockerBuilder.create_builders(name, replicas, namespace)
